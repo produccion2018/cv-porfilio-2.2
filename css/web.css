@@ -1,151 +1,210 @@
+/* RESET BÁSICO */
 body {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #2c2c2c 50%, #a9a9a9 50%);
   font-family: 'Segoe UI', sans-serif;
+  background-color: #1e1e1e;
+  color: #f1f1f1;
 }
 
-
-h1{
-    font-weight: bold; 
-  font-size: 3rem; 
-  transition: color 0.3s ease; 
+/* TÍTULO */
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin: 1.5rem 0 1rem;
+  color: #f1f1f1;
+  transition: color 0.3s ease;
 }
 h1:hover {
-    color: #ff4500; 
-  }
+  color: #ff4500;
+}
 
+/* CONTENEDOR PRINCIPAL */
+.habilidades-comunicacion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 2rem;
+  margin: 0 auto;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000050;
+  max-width: 1000px;
+}
 
+/* BLOQUES DE SECCIÓN */
+.skills-section,
+.comunicacion-section {
+  flex: 1;
+  min-width: 300px;
+  padding: 1.2rem;
+  background-color: #333;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+/* SUBTÍTULOS */
+.skills-section h2,
+.comunicacion-section h2 {
+  color: #ff5722;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #555;
+  padding-bottom: 0.5rem;
+}
+
+/* LISTAS */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+/* DOTS */
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.orange { background-color: #ffa500; }
+.red { background-color: #ff4500; }
+.white { background-color: #ffffff; }
+
+/* BARRAS */
+.barra {
+  width: 100%;
+  height: 10px;
+  background-color: #444;
+  border-radius: 5px;
+  margin: 0.7rem 0 1.2rem;
+  position: relative;
+  overflow: hidden;
+}
+.full::after,
+.medium::after,
+.low::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.full::after { width: 100%; background-color: #ff4500; }
+.medium::after { width: 60%; background-color: #ffa500; }
+.low::after { width: 30%; background-color: #aaa; }
+
+/* PUNTOS DE VALORACIÓN */
+.puntos {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 1.2rem;
+}
+.puntos .dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.filled { background-color: #ff4500; }
+.semi { background-color: #ffa500; }
+.empty { background-color: #444; }
+
+/* SECCIÓN FRONT-END */
+.front-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff5722;
+  color: white;
+  font-size: 1.6rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.front-end h3 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 0;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1024px) {
   .habilidades-comunicacion {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    padding: 2rem;
-    background: linear-gradient(to right, #2c2c2c 50%, #a9a9a9 50%);
-    color: #f1f1f1;
-    font-family: 'Segoe UI', sans-serif;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #ffffff80;
+    flex-direction: column;
+    padding: 1.5rem;
   }
-  
-  
-  
-  
+  h1 {
+    font-size: 1.8rem;
+  }
+  .front-end {
+    font-size: 1.4rem;
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .habilidades-comunicacion {
+    flex-direction: column;
+    padding: 1.2rem;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  .front-end {
+    font-size: 1.3rem;
+    padding: 0.8rem;
+  }
   .skills-section,
   .comunicacion-section {
-    flex: 1;
-    min-width: 300px;
+    min-width: 100%;
+    padding: 1rem;
   }
-  
-  .skills-section h2,
-  .comunicacion-section h2 {
-    color: #ff5722;
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid #444;
-    padding-bottom: 5px;
-  }
-  
-  .skills-section ul,
-  .comunicacion-section ul {
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
-  }
-  
-  .skills-section li,
-  .comunicacion-section li {
-    margin: 6px 0;
-    display: flex;
-    align-items: center;
+  li {
     font-size: 0.95rem;
   }
-  
-  .dot {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    display: inline-block;
-    margin-right: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: #2a2a2a;
   }
-  
-  .orange {
-    background-color: #ffa500;
+  .habilidades-comunicacion {
+    padding: 1rem;
   }
-  .red {
-    background-color: #ff4500;
+  h1 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
   }
-  .white {
-    background-color: #ffffff;
+  .front-end {
+    font-size: 1.2rem;
+    padding: 0.6rem;
   }
-  
+  .skills-section,
+  .comunicacion-section {
+    min-width: 100%;
+    padding: 1rem;
+  }
+  li {
+    font-size: 0.9rem;
+  }
   .barra {
-    width: 100%;
     height: 8px;
-    background: #555;
-    margin-bottom: 1rem;
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .full::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background: #ff4500;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  
-  .medium::after {
-    content: '';
-    width: 60%;
-    height: 100%;
-    background: #ffa500;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  
-  .low::after {
-    content: '';
-    width: 30%;
-    height: 100%;
-    background: #aaa;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-  
-  .puntos {
-    display: flex;
-    gap: 6px;
-    margin-bottom: 1rem;
   }
   .puntos .dot {
     width: 14px;
     height: 14px;
-    border-radius: 50%;
   }
-  .filled {
-    background-color: #ff4500;
-  }
-  .semi {
-    background-color: #ffa500;
-  }
-  .empty {
-    background-color: #444;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .habilidades-comunicacion {
-      flex-direction: column;
-    }
-  }
-  
-
-  
+}
