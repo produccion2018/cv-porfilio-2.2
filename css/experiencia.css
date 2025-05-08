@@ -1,0 +1,68 @@
+.experiencia-title {
+  text-align: center;
+  color: #ff4500;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeSlideIn 1s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.experiencia-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideIn 1s ease forwards;
+  animation-delay: 0.4s;
+}
+
+.exp-card {
+  background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
+  border-left: 5px solid #ff4500;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px #00000014;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideIn 0.8s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.exp-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #ffffff, #f0f0f0);
+}
+
+.exp-card h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.exp-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin: 5px 0;
+}
+
+.exp-card p strong {
+  color: #ffa500;
+}
+
+/* Animación de entrada */
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

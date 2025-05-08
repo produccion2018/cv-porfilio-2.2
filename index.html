@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currículum Mauro Alexander Pinto</title>
+  
+<link rel="shortcut icon" href="./img/fiveicon.jfif" type="image/x-icon">
+
+  <!-- Íconos -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Tipografía -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/web.css">
+  <link rel="stylesheet" href="./css/experiencia.css">
+  <link rel="stylesheet" href="./css/competencia.css">
+</head>
+<body>
+  <div class="container-cv">
+    <!-- Panel izquierdo -->
+    <div class="left-panel">
+      <img src="./img/foto de perfil mauro Pinto.jpg" alt="Foto" class="profile-pic">
+      <h1>MAURO</h1>
+      <h2>Alexander Pinto</h2>
+      <blockquote>
+        <p>"Soy Mauro Pinto, Desarrollador Web.<br>
+          Mi compromiso con la creatividad y la tecnología<br>
+          me ha llevado a una constante evolución<br>
+          desde el año 2019, combinando mi formación<br>
+          en Comunicación Audiovisual con el desarrollo web.<br>
+          Me he especializado mediante cursos en Coderhouse<br>
+          y proyectos propios que integran diseño y funcionalidad".
+        </p>
+      </blockquote>
+    </div>
+
+    <div class="side-buttons">
+      <button onclick="showSection('developer')">DEVELOPER<br>WEB.</button>
+      <button onclick="showSection('competencias')" class="orange">COMPETENCIAS</button>
+      <button onclick="showSection('experiencias')" class="orange">EXPERIENCIAS</button>
+      
+      <div class="icons">
+        <a href="#" onclick="location.reload()" title="Recargar"><i class="bi bi-arrow-clockwise"></i></a>
+         <a href="https://web.whatsapp.com/" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp whatsapp-icon"></i></a>
+        <a href="https://www.google.com" target="_blank" title="Buscar"><i class="bi bi-search"></i></a>
+        <a href="https://www.instagram.com/tu_usuario" target="_blank" title="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="https://github.com/produccion2018" target="_blank" title="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/mauroalexanderpinto/" target="_blank" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="./cv/Cv_Js_developer_Mauro_Alexander_Pinto_Castro_2025_2.2.pdf" download title="Descargar CV"><i class="bi bi-download"></i></a>
+      </div>
+    </div>
+    
+    <!-- Panel derecho -->
+    <div class="right-panel">
+      <div id="defaultContent">
+        <h1 class="cv-title">CURRICULUM VITAE</h1>
+        <img src="dragon.png" alt="Logo dragón" class="dragon-logo">
+      </div>
+
+      <div id="developer" class="content-section">
+        <div class="habilidades-comunicacion">
+          <div class="skills-section">
+            <h2>FRONT-END</h2>
+            <ul>
+              <li><span class="dot orange"></span> JavaScript</li>
+              <li><span class="dot red"></span> React</li>
+              <li><span class="dot orange"></span> HTML</li>
+              <li><span class="dot red"></span> CSS / Sass</li>
+              <li><span class="dot white"></span> Bootstrap</li>
+            </ul>
+
+            <h2>FRAMEWORKS / HERRAMIENTAS</h2>
+            <ul>
+              <li><span class="dot orange"></span> Git / GitHub</li>
+              <li><span class="dot orange"></span> APIs REST</li>
+              <li><span class="dot white"></span> React Router</li>
+              <li><span class="dot white"></span> Redux (en progreso)</li>
+              <li><span class="dot orange"></span> Figma (diseño UI)</li>
+              <li><span class="dot white"></span> Photoshop</li>
+            </ul>
+          </div>
+
+          <div class="comunicacion-section">
+            <h2>IDIOMAS</h2>
+            <p>Español (Nativo)</p>
+            <div class="barra full"></div>
+            <p>Inglés (Intermedio técnico)</p>
+            <div class="barra medium"></div>
+
+            <h2>SOFT SKILLS</h2>
+            <p>Diseño y Comunicación Audiovisual</p>
+            <ul>
+              <li>🎙️ Locución profesional</li>
+              <li>🎞️ Edición de video (Premiere / After Effects)</li>
+              <li>🎬 Producción multimedia y contenidos digitales</li>
+            </ul>
+
+            <p>Trabajo en equipo</p>
+            <div class="puntos">
+              <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot semi"></span><span class="dot empty"></span>
+            </div>
+
+            <p>Creatividad e innovación</p>
+            <div class="puntos">
+              <span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot filled"></span><span class="dot semi"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="competencias" class="content-section competencias">
+        <h2 class="competencias-title">Competencias</h2>
+      
+        <div class="competencias-cards">
+          <div class="card javascript">
+            <i class="fab fa-js-square"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="card react">
+            <i class="fab fa-react"></i>
+            <p>React</p>
+          </div>
+          <div class="card html-css">
+            <i class="fab fa-html5"></i>
+            <p>HTML & CSS</p>
+          </div>
+          <div class="card bootstrap">
+            <i class="fab fa-bootstrap"></i>
+            <p>Bootstrap</p>
+          </div>
+          <div class="card photoshop">
+            <i class="fab fa-adobe"></i>
+            <p>Photoshop</p>
+          </div>
+          <div class="card premiere">
+            <i class="fas fa-video"></i>
+            <p>Premiere</p>
+          </div>
+          <div class="card after-effects">
+            <i class="fas fa-bolt"></i>
+            <p>After Effects</p>
+          </div>
+        </div>
+      
+        <div class="idiomas">
+          <h3>Idiomas</h3>
+          <ul>
+            <li><strong>Español:</strong> Nativo</li>
+            <li><strong>Inglés:</strong> Técnico (lectura y comprensión)</li>
+          </ul>
+      
+          <h4>Progreso en idiomas:</h4>
+          <div class="barra-progreso">
+            <div class="barra español"></div>
+            <div class="barra ingles"></div>
+          </div>
+        </div>
+      </section>
+      
+      <section id="experiencias" class="content-section experiencia">
+        <h2 class="experiencia-title">Experiencia</h2>
+        <div class="experiencia-cards">
+          
+          <div class="exp-card">
+            <h3>Desarrollador Web Freelance</h3>
+            <p><strong>2023 - Actualidad</strong></p>
+            <p>Desarrollo de sitios web personalizados para clientes independientes. Uso de HTML, CSS, JavaScript y React. Maquetación responsive, animaciones con JS y consumo de APIs.</p>
+          </div>
+      
+          <div class="exp-card">
+            <h3>Frontend Developer - Nova Web Studio</h3>
+            <p><strong>2022 - 2023</strong></p>
+            <p>Diseño e implementación de interfaces con React y Bootstrap. Optimización de rendimiento, mantenimiento de componentes, colaboración en equipo ágil y control de versiones con Git.</p>
+          </div>
+      
+          <div class="exp-card">
+            <h3>Editor Creativo Multimedia</h3>
+            <p><strong>2021 - 2022</strong></p>
+            <p>Edición de video, diseño gráfico para web y creación de contenido digital usando Photoshop, Premiere y After Effects para campañas y portales web.</p>
+          </div>
+      
+        </div>
+      </section>
+      
+
+  
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
