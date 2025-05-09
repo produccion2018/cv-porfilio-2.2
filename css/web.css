@@ -10,9 +10,9 @@ body {
 /* TÍTULO */
 h1 {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.7rem; /* Más reducido */
   text-align: center;
-  margin: 1.5rem 0 1rem;
+  margin: 1rem 0 0.8rem; /* Reducido margen */
   color: #f1f1f1;
   transition: color 0.3s ease;
 }
@@ -25,34 +25,33 @@ h1:hover {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  gap: 1.5rem;
-  padding: 2rem;
+  gap: 1.5rem; /* Reducido el espacio entre bloques */
+  padding: 1.5rem; /* Reducido padding */
   margin: 0 auto;
   background-color: #2a2a2a;
   border-radius: 12px;
-  box-shadow: 0 0 10px #00000050;
-  max-width: 1000px;
+  box-shadow: 0 0 8px #00000050; /* Reducido el box-shadow */
+  max-width: 900px; /* Reducido el max-width */
 }
 
 /* BLOQUES DE SECCIÓN */
 .skills-section,
 .comunicacion-section {
   flex: 1;
-  min-width: 300px;
-  padding: 1.2rem;
+  min-width: 250px; /* Reducido el ancho mínimo */
+  padding: 1rem; /* Reducido padding */
   background-color: #333;
   border-radius: 10px;
-  margin: 0 auto;
 }
 
 /* SUBTÍTULOS */
 .skills-section h2,
 .comunicacion-section h2 {
   color: #ff5722;
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
+  font-size: 1.3rem; /* Más pequeño */
+  margin-bottom: 0.8rem; /* Reducido margen */
   border-bottom: 1px solid #555;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.4rem; /* Reducido padding */
 }
 
 /* LISTAS */
@@ -64,17 +63,17 @@ ul {
 li {
   display: flex;
   align-items: center;
-  font-size: 1rem;
-  margin-bottom: 12px;
-  line-height: 1.6;
+  font-size: 0.95rem; /* Más pequeño */
+  margin-bottom: 10px; /* Reducido margen */
+  line-height: 1.5; /* Reducido el interlineado */
 }
 
 /* DOTS */
 .dot {
-  width: 12px;
-  height: 12px;
+  width: 10px; /* Reducido tamaño */
+  height: 10px; /* Reducido tamaño */
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 8px; /* Reducido margen */
 }
 .orange { background-color: #ffa500; }
 .red { background-color: #ff4500; }
@@ -83,10 +82,10 @@ li {
 /* BARRAS */
 .barra {
   width: 100%;
-  height: 10px;
+  height: 6px; /* Reducido tamaño */
   background-color: #444;
   border-radius: 5px;
-  margin: 0.7rem 0 1.2rem;
+  margin: 0.5rem 0 1rem; /* Reducido margen */
   position: relative;
   overflow: hidden;
 }
@@ -106,105 +105,50 @@ li {
 /* PUNTOS DE VALORACIÓN */
 .puntos {
   display: flex;
-  gap: 6px;
-  margin-bottom: 1.2rem;
+  gap: 5px; /* Reducido espacio entre puntos */
+  margin-bottom: 1rem; /* Reducido margen */
 }
 .puntos .dot {
-  width: 16px;
-  height: 16px;
+  width: 12px; /* Reducido tamaño */
+  height: 12px; /* Reducido tamaño */
   border-radius: 50%;
 }
 .filled { background-color: #ff4500; }
 .semi { background-color: #ffa500; }
 .empty { background-color: #444; }
 
-/* SECCIÓN FRONT-END */
-.front-end {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ff5722;
-  color: white;
-  font-size: 1.6rem;
-  padding: 1.5rem;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-  width: 100%;
-  text-align: center;
-}
-
-.front-end h3 {
-  font-weight: bold;
-  font-size: 1.8rem;
-  margin: 0;
-  color: white;
-}
-
 /* RESPONSIVE */
-@media screen and (max-width: 1024px) {
-  .habilidades-comunicacion {
-    flex-direction: column;
-    padding: 1.5rem;
-  }
-  h1 {
-    font-size: 1.8rem;
-  }
-  .front-end {
-    font-size: 1.4rem;
-    padding: 1rem;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .habilidades-comunicacion {
     flex-direction: column;
-    padding: 1.2rem;
+    padding: 1rem; /* Reducido padding */
   }
   h1 {
-    font-size: 1.7rem;
-  }
-  .front-end {
-    font-size: 1.3rem;
-    padding: 0.8rem;
-  }
-  .skills-section,
-  .comunicacion-section {
-    min-width: 100%;
-    padding: 1rem;
-  }
-  li {
-    font-size: 0.95rem;
+    font-size: 1.5rem; /* Reducido tamaño */
   }
 }
 
 @media screen and (max-width: 480px) {
-  body {
-    background-color: #2a2a2a;
-  }
   .habilidades-comunicacion {
-    padding: 1rem;
+    padding: 0.8rem; /* Reducido padding */
   }
   h1 {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-  }
-  .front-end {
-    font-size: 1.2rem;
-    padding: 0.6rem;
+    font-size: 1.3rem; /* Reducido tamaño */
+    margin: 0.8rem 0; /* Reducido margen */
   }
   .skills-section,
   .comunicacion-section {
     min-width: 100%;
-    padding: 1rem;
+    padding: 0.8rem; /* Reducido padding */
   }
   li {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Más pequeño */
   }
   .barra {
-    height: 8px;
+    height: 5px; /* Reducido tamaño */
   }
   .puntos .dot {
-    width: 14px;
-    height: 14px;
+    width: 10px; /* Reducido tamaño */
+    height: 10px; /* Reducido tamaño */
   }
 }
